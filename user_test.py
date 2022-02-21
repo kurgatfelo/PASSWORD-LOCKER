@@ -52,7 +52,7 @@ class TestUser(unittest.TestCase):
         self.new_user.delete_user()
         self.assertEqual(len(User.users_list), 1)
 
-   
+    def test_find_user(self):
         """
         Method for testing if the app can really find a user by their usernames.
         """
@@ -64,7 +64,7 @@ class TestUser(unittest.TestCase):
 
         self.assertEqual(found_user.password, testing_user.password)
 
-    def test_users_exists(self):
+    
         """
         Method to test if the users_exists function is geting the users list.
         """
