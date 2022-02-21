@@ -18,13 +18,13 @@ class TestUser(unittest.TestCase):
         self.assertEqual(self.new_user.username, "Felo")
         self.assertEqual(self.new_user.password, "Felixkurgat5")
 
-    
+    def tearDown(self):
         """
         Method to delete users from users list after every test case
         """
         User.users_list = []
 
-    def test_save_user(self):
+    
         """
         A test method to test if our app is saving the objects/users.
         """
