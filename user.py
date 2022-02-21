@@ -24,7 +24,7 @@ class User:
         User.users_list.remove(self)
 
     @classmethod
-    
+    def find_user(cls, username, password):
         """
         Method that takes in the username and return the user account.
         """
@@ -33,7 +33,7 @@ class User:
                 return user
 
     @classmethod
-    def users_exists(cls, username, password):
+    
         """
         A method to check if user's list exists.
         """
