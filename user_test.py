@@ -11,14 +11,14 @@ class TestUser(unittest.TestCase):
         """
         self.new_user = User("Felo", "Felixkurgat5")
 
-    
+    def test__init__(self):
         """
         Test init method to test if objects properties are being initialized properly
         """
         self.assertEqual(self.new_user.username, "Felo")
         self.assertEqual(self.new_user.password, "Felixkurgat5")
 
-    def tearDown(self):
+    
         """
         Method to delete users from users list after every test case
         """
