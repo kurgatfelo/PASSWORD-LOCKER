@@ -5,13 +5,13 @@ class TestUser(unittest.TestCase):
     """
     Test class that defines test cases for our user class.
     """
-    
+    def setUp(self):
         """
         Setup method that is run before each test case
         """
         self.new_user = User("Felo", "Felixkurgat5")
 
-    def test__init__(self):
+    
         """
         Test init method to test if objects properties are being initialized properly
         """
