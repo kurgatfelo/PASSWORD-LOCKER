@@ -4,7 +4,7 @@ class Credentials:
     """
     credentials_list = []
 
-    
+    def __init__(self, account_type, username, password):
         """
         Init method for initializing user credentials objects
         """
@@ -12,7 +12,7 @@ class Credentials:
         self.username = username
         self.password = password
 
-    def save_credentials(self):
+    
         """
         Method to save new instances of credential class.
         """
