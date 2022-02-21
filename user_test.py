@@ -31,7 +31,7 @@ class TestUser(unittest.TestCase):
         self.new_user.save_user()
         self.assertEqual(len(User.users_list), 1)
 
-    
+    def test_save_multiple_users(self):
         """
         Method to test if we can save more than one user to our users list.
         """
@@ -41,7 +41,7 @@ class TestUser(unittest.TestCase):
 
         self.assertEqual(len(User.users_list), 2)
 
-    def test_delete_user(self):
+    
         """
         Test method to test if the app can delete objects from the list
         """
