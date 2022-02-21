@@ -2,7 +2,7 @@ class Credentials:
     """
     Class for  new instances of user credentials
     """
-    credentials_list = []
+    
 
     def __init__(self, account_type, username, password):
         """
