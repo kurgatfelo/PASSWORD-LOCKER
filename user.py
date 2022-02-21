@@ -33,7 +33,7 @@ class User:
                 return user
 
     @classmethod
-    
+    def users_exists(cls, username, password):
         """
         A method to check if user's list exists.
         """
@@ -43,7 +43,7 @@ class User:
         return False
 
     @classmethod
-    def display_users(cls):
+    
         """
         Method to display all the users in our list.
         """
