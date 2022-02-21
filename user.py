@@ -11,13 +11,13 @@ class User:
         self.username = username
         self.password = password
 
-    
+    def save_user(self):
         """
         This is a save method for saving newly created objects.
         """
         User.users_list.append(self)
 
-    def delete_user(self):
+    
         """
         A delete method for deleting a user from the users list.
         """
