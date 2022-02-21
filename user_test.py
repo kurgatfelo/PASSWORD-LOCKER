@@ -24,14 +24,14 @@ class TestUser(unittest.TestCase):
         """
         User.users_list = []
 
-    
+    def test_save_user(self):
         """
         A test method to test if our app is saving the objects/users.
         """
         self.new_user.save_user()
         self.assertEqual(len(User.users_list), 1)
 
-    def test_save_multiple_users(self):
+    
         """
         Method to test if we can save more than one user to our users list.
         """
