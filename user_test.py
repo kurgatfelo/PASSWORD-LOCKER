@@ -64,7 +64,7 @@ class TestUser(unittest.TestCase):
 
         self.assertEqual(found_user.password, testing_user.password)
 
-    
+    def test_users_exists(self):
         """
         Method to test if the users_exists function is geting the users list.
         """
@@ -76,7 +76,7 @@ class TestUser(unittest.TestCase):
 
         self.assertTrue(users_exists)
 
-    def test_display_users(self):
+   
         """
         A testing method to test if display users function does display users list.
         """
