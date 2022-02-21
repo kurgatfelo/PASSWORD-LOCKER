@@ -1,8 +1,8 @@
-
+class User:
     """
     User class for generating new instances of users.
     """
-    users_list = []
+    
 
     def __init__(self, username, password):
         """
