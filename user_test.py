@@ -41,7 +41,7 @@ class TestUser(unittest.TestCase):
 
         self.assertEqual(len(User.users_list), 2)
 
-    
+    def test_delete_user(self):
         """
         Test method to test if the app can delete objects from the list
         """
@@ -52,7 +52,7 @@ class TestUser(unittest.TestCase):
         self.new_user.delete_user()
         self.assertEqual(len(User.users_list), 1)
 
-    def test_find_user(self):
+   
         """
         Method for testing if the app can really find a user by their usernames.
         """
